@@ -1,5 +1,8 @@
 # seal-odata-mongo
 
+[![CircleCI](https://circleci.com/gh/sealsystems/seal-odata-mongo.svg?style=svg)](https://circleci.com/gh/sealsystems/seal-odata-mongo)
+[![AppVeyor](https://ci.appveyor.com/api/projects/status/h2bha85i9rvpedao?svg=true)](https://ci.appveyor.com/project/Plossys/seal-odata-mongo)
+
 seal-odata-mongo is a middleware that translates [OData](http://www.odata.org/) to MongoDB queries. [OData Version 2.0](http://www.odata.org/documentation/odata-version-2-0/uri-conventions/) URI conventions are supported.
 
 ## Installation
