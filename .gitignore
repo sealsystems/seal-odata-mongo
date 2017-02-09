@@ -1,0 +1,17 @@
+# Node.js
+node_modules/
+npm-debug.log
+
+# Coverage
+coverage/
+
+# IntelliJ
+.idea
+*.iml
+
+# Vi
+*.swp
+*~
+
+# OS X generated files and folders
+.DS_Store

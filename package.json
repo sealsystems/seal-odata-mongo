@@ -1,0 +1,38 @@
+{
+  "name": "seal-odata-mongo",
+  "version": "0.0.7",
+  "description": "seal-odata-mongo is a middleware that translates OData to MongoDB queries.",
+  "author": {
+    "name": "SEAL Systems AG",
+    "email": "opensource@sealsystems.de",
+    "url": "http://www.sealsystems.de"
+  },
+  "license": "MIT",
+  "scripts": {
+    "bot": "bot",
+    "release": "bot release && npm publish",
+    "release-minor": "bot release --type minor && npm publish",
+    "release-major": "bot release --type major && npm publish",
+    "test": "bot test-units",
+    "coverage": "istanbul cover _mocha -- --recursive --ui tdd ",
+    "report": "npm run coverage && if [[ $OSTYPE == darwin* ]]; then open=open; else open=xdg-open; fi && $open coverage/lcov-report/index.html"
+  },
+  "main": "lib/odataMongo.js",
+  "dependencies": {
+    "breeze-mongodb": "0.0.8",
+    "comparejs": "0.1.5",
+    "lodash": "4.17.4"
+  },
+  "devDependencies": {
+    "assertthat": "0.8.3",
+    "eslint-config-seal": "0.0.9",
+    "express": "4.14.1",
+    "roboter": "0.13.7",
+    "roboter-server": "0.13.7",
+    "supertest": "3.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/sealsystems/seal-odata-mongo.git"
+  }
+}
