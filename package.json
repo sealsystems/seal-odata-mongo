@@ -27,8 +27,8 @@
     "assertthat": "0.8.3",
     "eslint-config-seal": "0.0.9",
     "express": "4.14.1",
-    "roboter": "0.13.7",
-    "roboter-server": "0.13.7",
+    "roboter": "0.14.4",
+    "roboter-server": "0.14.4",
     "supertest": "3.0.0"
   },
   "repository": {
