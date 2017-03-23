@@ -13,7 +13,7 @@ version: "{build}"
 #   - ps: $blockRdp = $true; iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/appveyor/ci/master/scripts/enable-rdp.ps1'))
 
 environment:
-  NODE_VERSION: "6.2.2"
+  NODE_VERSION: 6.10.1
 
 install:
   - ps: Install-Product node $env:NODE_VERSION x64
