@@ -36,9 +36,11 @@ In case the client sends an invalid OData expression, the middleware responds wi
 * `$filter`
 * `$top` - limit the result to N elements
 * `$skip` - skip N elements of the query
-* `$select`
-* `$inlinecount` - see implementation example in seal-rest to retrieve count and the result
-* `$orderby`
+* `$select` - list of result properties
+* `$top` - limit the result list to N
+* `$select` - list of result properties
+* `$inlinecount` - if missing or set to none the response is the result array. If set to allpages the response is an object with `results` as the result array and `totalCount` with the total count of entries found for this query
+* `$orderby` - sort by a field
 
 ## Running the build
 
