@@ -7,7 +7,7 @@ machine:
   timezone: Europe/Berlin
 
   node:
-    version: 6.10.1
+    version: 6.11.2
 
 dependencies:
   pre:
