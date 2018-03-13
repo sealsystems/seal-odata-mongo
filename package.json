@@ -1,7 +1,7 @@
 {
-  "name": "seal-odata-mongo",
+  "name": "@sealsystems/odata-mongo",
   "version": "0.0.8",
-  "description": "seal-odata-mongo is a middleware that translates OData to MongoDB queries.",
+  "description": "@sealsystems/odata-mongo is a middleware that translates OData to MongoDB queries.",
   "author": {
     "name": "SEAL Systems AG",
     "email": "opensource@sealsystems.de",
@@ -33,6 +33,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/sealsystems/seal-odata-mongo.git"
+    "url": "https://github.com/sealsystems/node-odata-mongo.git"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
