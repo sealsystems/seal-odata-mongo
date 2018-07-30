@@ -1,17 +1,15 @@
 # Node.js
 node_modules/
 npm-debug.log
+package-lock.json
 
 # Coverage
+.nyc_output/
 coverage/
-
-# IntelliJ
-.idea
-*.iml
 
 # Vi
 *.swp
 *~
 
-# OS X generated files and folders
+# MacOS
 .DS_Store
