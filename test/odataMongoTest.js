@@ -128,14 +128,6 @@ suite('odataMongo', () => {
       });
     });
 
-    test('returns a 400 on an unknown key.', (done) => {
-      request(app).get('/foo?bar=baz').end((err, res) => {
-        assert.that(err).is.null();
-        assert.that(res.status).is.equalTo(400);
-        done();
-      });
-    });
-
     suite('parses $select', () => {
       test('does not set queryOptions.select if no fields are given.', (done) => {
         request(app).get('/foo').end((err, res) => {
