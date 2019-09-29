@@ -1,3 +1,14 @@
+## 0.2.1 (2019-09-29)
+
+### Chores
+
+
+#### bump comparejs from 2.1.0 to 3.0.1 ([87a4e19](https://github.com/sealsystems/node-odata-mongo/commit/87a4e19))
+
+
+
+---
+
 ## 0.2.0 (2019-09-27)
 
 ### Features
