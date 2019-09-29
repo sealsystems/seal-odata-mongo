@@ -5,6 +5,7 @@
 
 @sealsystems/odata-mongo is a middleware that translates [OData](http://www.odata.org/) to MongoDB queries. [OData Version 2.0](http://www.odata.org/documentation/odata-version-2-0/uri-conventions/) URI conventions are supported.
 
+
 ## Installation
 
 ```bash
