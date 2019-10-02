@@ -24,7 +24,7 @@ Here is some information to help you integrate your changes as easily as possibl
 
 #### Title Field
 
-The title is one of the most important aspects of a pull request. The content is shown in `CHANGELOG.md` and release notes. Therefore, be sure to summarize your changes in a short but catchy sentence. Others should be able to easily get an idea of your changes.
+The title is one of the most important parts of a pull request. The content is shown in `CHANGELOG.md` and release notes. Therefore, be sure to summarize your changes in a short but catchy sentence. Others should be able to easily get an idea of your changes.
 
 By adding keywords at the beginning of the title, you can control the process of merging and releasing your pull request. Here is the list of all available keywords:
 
@@ -86,7 +86,7 @@ Besides this introduction, the description field also contains sections with the
 
   The first line is shown as a heading and the following paragraphs as normal text.
 
-  Use this section only to describe the changes to the interface and how to adapt to the new version. Use the `Details` section to provide information about the bugfix/feature itself.
+  Use this section only to describe changes to the interface and how to adapt to the new version. Use the `Details` section to provide information about the bugfix/feature itself.
 
 - `References`
 
@@ -108,7 +108,7 @@ You cannot use the green "Merge" button. Instead you must add a special comment 
 
 This causes our `merge bot` to merge the pull request using a commit message consisting of the various pieces of information in the `Title` and `Description` fields.
 
-The branch is automatically deleted after a successful merge. If you do not have permissions to commit to the repository, a comment containing an error message is created.
+Only users with admin or write permissions are allowed to merge a pull request. The branch is automatically deleted after a successful merge.
 
 </p>
 </details>
