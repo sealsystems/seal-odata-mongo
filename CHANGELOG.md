@@ -1,3 +1,23 @@
+## 0.3.0 (2019-10-14)
+
+### Features
+
+
+#### PLS-431 ([f035da3](https://github.com/sealsystems/node-odata-mongo/commit/f035da3))
+
+- Removed roboter
+ - Updated CircleCI config
+ - Updated GitHub Pull Request template
+ - Updated eslintrc
+ - Updated appveyor config
+ - Added `package-lock.json` to git
+ - Added dependabot config
+ - Fixed linting
+ - Used `seal-node:oss-module-update`
+
+
+---
+
 ## 0.2.1 (2019-09-29)
 
 ### Chores
