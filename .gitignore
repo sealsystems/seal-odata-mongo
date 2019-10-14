@@ -6,9 +6,17 @@ npm-debug.log
 .nyc_output/
 coverage/
 
+# CI
+output/
+temp/
+
 # Vi
 *.swp
 *~
 
 # MacOS
 .DS_Store
+
+# Misc
+*.stat
+*.log
