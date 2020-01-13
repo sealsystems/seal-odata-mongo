@@ -28,7 +28,7 @@
   "devDependencies": {
     "@sealsystems/eslint-config-es": "3.6.0",
     "@sealsystems/mocha": "4.1.1",
-    "@sealsystems/semantic-release": "4.0.13",
+    "@sealsystems/semantic-release": "4.0.14",
     "express": "4.17.1",
     "supertest": "4.0.2"
   },
