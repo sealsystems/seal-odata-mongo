@@ -20,7 +20,7 @@ suite('odataMongo', () => {
   suite('middleware', () => {
     let app;
 
-    suiteSetup(() => {
+    suiteSetup(async () => {
       app = express();
 
       app.get('/foo', odataMongo(), (req, res) => {
