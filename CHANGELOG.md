@@ -1,3 +1,14 @@
+## 0.3.1 (2020-03-09)
+
+### Chores
+
+
+#### yoed ([56bf2ca](https://github.com/sealsystems/node-odata-mongo/commit/56bf2ca))
+
+
+
+---
+
 ## 0.3.0 (2019-10-14)
 
 ### Features
