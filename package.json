@@ -23,7 +23,7 @@
   "dependencies": {
     "breeze-mongodb": "0.0.8",
     "comparejs": "2.1.0",
-    "lodash": "4.17.15"
+    "lodash": "4.17.16"
   },
   "devDependencies": {
     "@sealsystems/eslint-config-es": "3.6.2",
