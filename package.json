@@ -1,6 +1,6 @@
 {
   "name": "@sealsystems/odata-mongo",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "description": "@sealsystems/odata-mongo is a middleware that translates OData to MongoDB queries.",
   "author": {
     "name": "SEAL Systems AG",

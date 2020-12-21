@@ -1,3 +1,10 @@
+## 0.3.2 (2020-12-21)
+
+### Chores
+
+
+Trigger release ([9b53fa8](https://github.com/sealsystems/node-odata-mongo/commit/9b53fa8))
+
 ## 0.3.1 (2020-03-09)
 
 ### Chores
