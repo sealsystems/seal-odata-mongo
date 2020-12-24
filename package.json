@@ -34,7 +34,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/sealsystems/node-odata-mongo.git"
+    "url": "https://github.com/sealsystems/odata-mongo"
   },
   "release": {
     "extends": "@sealsystems/semantic-release/node-module"
