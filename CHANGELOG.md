@@ -1,3 +1,12 @@
+## 0.3.3 (2020-12-26)
+
+### Chores
+
+
+Update build configuration ([8d1bbb9](https://github.com/sealsystems/node-odata-mongo/commit/8d1bbb9))
+
+Update build configuration ([a1ade8a](https://github.com/sealsystems/node-odata-mongo/commit/a1ade8a))
+
 ## 0.3.2 (2020-12-21)
 
 ### Chores
