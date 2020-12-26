@@ -1,8 +1,9 @@
-name: Nightly
+name: update-build-config
 
 on:
   schedule:
-    - cron: "30 2 * * *"
+    # 0:30
+    - cron: "30 0 * * *"
 
 jobs:
   Update-Build-Configuration:
@@ -45,8 +46,21 @@ jobs:
           # Use personal access token, must be set for *each step*
           NODE_AUTH_TOKEN: ${{ secrets.CI_TOKEN }}
 
+      - name: Check for modifications other than package-lock.json
+        run: |
+          git add .
+          # Remove package-lock.json from index
+          git reset -- package-lock.json
+          if git diff --cached --exit-code; then
+            echo "No relevant changes made. Skip creating pull request."
+          else
+            echo "CREATE_PR=1" >> $GITHUB_ENV
+          fi
+          git reset
+
       - name: Create pull request
         uses: peter-evans/create-pull-request@v2
+        if: ${{ env.CREATE_PR == '1' }}
         with:
           title: Update build configuration
           body: |
