@@ -2,8 +2,7 @@ name: update-build-config
 
 on:
   schedule:
-    # 0:30
-    - cron: "30 0 * * *"
+    - cron: "30 2 * * *"
 
 jobs:
   Update-Build-Configuration:
