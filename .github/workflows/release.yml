@@ -12,14 +12,14 @@ env:
 
 jobs:
   Test-Linux:
-    # Ignore release commits
-    if: "!startsWith(github.event.head_commit.message, 'Release')"
-
     runs-on: ubuntu-18.04
 
     services:
       mongo:
-        image: plossys/mongodb-rs:3.6.17
+        image: ghcr.io/sealsystems/mongodb-rs:3.6.17
+        credentials:
+          username: ${{ github.actor }}
+          password: ${{ secrets.CI_TOKEN }}
         ports:
         - 27017:27017
       consul:
@@ -50,18 +50,15 @@ jobs:
       run: npm ci
       env:
         # Use personal access token, must be set for *each step*
-        NODE_AUTH_TOKEN: ${{secrets.CI_TOKEN}}
+        NODE_AUTH_TOKEN: ${{ secrets.CI_TOKEN }}
 
     - name: Run tests
       run: npm run bot
       env:
         # Use personal access token, must be set for *each step*
-        NODE_AUTH_TOKEN: ${{secrets.CI_TOKEN}}
+        NODE_AUTH_TOKEN: ${{ secrets.CI_TOKEN }}
 
   # Test-Windows:
-  #   # Ignore release commits
-  #   if: "!startsWith(github.event.head_commit.message, 'Release')"
-
   #   runs-on: windows-2019
 
   #   steps:
@@ -141,18 +138,15 @@ jobs:
   #     run: npm ci
   #     env:
   #       # Use personal access token, must be set for *each step*
-  #       NODE_AUTH_TOKEN: ${{secrets.CI_TOKEN}}
+  #       NODE_AUTH_TOKEN: ${{ secrets.CI_TOKEN }}
 
   #   - name: Run tests
   #     run: npm run bot
   #     env:
   #       # Use personal access token, must be set for *each step*
-  #       NODE_AUTH_TOKEN: ${{secrets.CI_TOKEN}}
+  #       NODE_AUTH_TOKEN: ${{ secrets.CI_TOKEN }}
 
   Release:
-    # Ignore release commits
-    if: "!startsWith(github.event.head_commit.message, 'Release')"
-
     needs:
     - Test-Linux
     # - Test-Windows
@@ -171,9 +165,6 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-      with:
-        # Use personal access token for cloning (and later pushing) code
-        token: ${{ secrets.CI_TOKEN }}
 
     - name: Use Node.js 12.19.0
       uses: actions/setup-node@v1
@@ -195,7 +186,7 @@ jobs:
       run: npm ci
       env:
         # Use personal access token, must be set for *each step*
-        NODE_AUTH_TOKEN: ${{secrets.CI_TOKEN}}
+        NODE_AUTH_TOKEN: ${{ secrets.CI_TOKEN }}
 
     - name: "Bugfix release: Set distribution tag accordingly to not remove 'latest' tag from the current version"
       # Only on bugfix branches
@@ -208,4 +199,5 @@ jobs:
       run: npm run release
       env:
         # Use personal access token, must be set for *each step*
-        NODE_AUTH_TOKEN: ${{secrets.CI_TOKEN}}
+        NODE_AUTH_TOKEN: ${{ secrets.CI_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.CI_TOKEN }}
