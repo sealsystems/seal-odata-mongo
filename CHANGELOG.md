@@ -1,3 +1,10 @@
+## 0.3.4 (2021-01-16)
+
+### Chores
+
+
+Update build config ([4bfce7f](https://github.com/sealsystems/node-odata-mongo/commit/4bfce7f))
+
 ## 0.3.3 (2020-12-26)
 
 ### Chores
