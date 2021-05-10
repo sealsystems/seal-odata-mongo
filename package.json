@@ -21,7 +21,7 @@
   },
   "main": "lib/odataMongo.js",
   "dependencies": {
-    "breeze-mongodb": "0.0.8",
+    "breeze-mongodb": "0.0.9",
     "comparejs": "2.1.0",
     "lodash": "4.17.15"
   },
